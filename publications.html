@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<header>
+    <div class="container">
+        <div class = "content-header">
+            <h2 class="site-title">
+                <a href="/">Rohan Shorey</a>
+            </h2>
+            <nav class="nav-links">
+                <a href="/blog" class="{% if current_page == 'blog' %}active{% endif %}">Blog</a>
+                <a href="/publications" class="{% if current_page == 'publications' %}active{% endif %}">Publications</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 1.jpg') }}" alt="Publication 1" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://link.springer.com/article/10.1007/s10570-024-06073-7>Effect of acetylation of kraft lignin on the blend compatibility with cellulose acetate and the resulting physicomechanical properties</a>
+                </nav>
+                 <p> <u>Rohan Shorey</u>, Parinaz Ataeian, Tizazu H. Mekonnen </p>
+                <div class="journal">
+                    <p>Cellulose, 31 (2024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 2.jpg') }}" alt="Publication 2" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://www.sciencedirect.com/science/article/pii/S0141813024024772>Oleic acid decorated kraft lignin as a hydrophobic and functional filler of cellulose acetate films</a>
+                </nav>
+                 <p> <u>Rohan Shorey</u>, Tizazu H. Mekonnen </p>
+                <div class="journal">
+                    <p>Int. J. Biol. Macromol., 268 (2024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 3.gif') }}" alt="Publication 3" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://pubs.rsc.org/en/content/articlehtml/2024/su/d3su00401e>Valorization of lignin for advanced material applications: a review</a>
+                </nav>
+                 <p> <u>Rohan Shorey</u>, Ayyoub Salaghi, Pedram Fatehi, Tizazu H. Mekonnen </p>
+                <div class="journal">
+                    <p>RSC Sustain., 2 (2024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 4.jpg') }}" alt="Publication 4" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://www.sciencedirect.com/science/article/pii/S0141813023000119>Esterification of lignin with long chain fatty acids for the stabilization of oil-in-water Pickering emulsions</a>
+                </nav>
+                 <p> <u>Rohan Shorey</u>, Tizazu H. Mekonnen</p>
+                <div class="journal">
+                    <p>Int. J. Biol. Macromol., 230 (2023)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 5.jpg') }}" alt="Publication 5" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://www.sciencedirect.com/science/article/pii/S0926669022015114>Fatty acid modified zein films: Effect of fatty acid chain length on the processability and thermomechanical properties of modified zein films</a>
+                </nav>
+                 <p>Debela T. Tadele, <u>Rohan Shorey</u>, Tizazu H. Mekonnen</p>
+                <div class="journal">
+                    <p>Ind. Crop. Prod., 192 (2023)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 6.jpg') }}" alt="Publication 6" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://www.sciencedirect.com/science/article/pii/S0141813022007358#f0035>Sustainable paper coating with enhanced barrier properties based on esterified lignin and PBAT blend</a>
+                </nav>
+                 <p> <u>Rohan Shorey</u>, Tizazu H. Mekonnen</p>
+                <div class="journal">
+                    <p>Int. J. Biol. Macromol., 209 (2022)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="two-columns">
+            <div class="column left-column">
+                <p></p>
+                <img src="{{ url_for('static', filename='pub/pub 7.jpg') }}" alt="Publication 7" class="pub-image">
+            </div>
+            <div class="column right-column">
+                <nav class = "pub-links">
+                <a href=https://www.sciencedirect.com/science/article/abs/pii/S0926669021009547>Hydrophobic modification of lignin for rubber composites</a>
+                </nav>
+                 <p> <u>Rohan Shorey</u>, Arvind Gupta , Tizazu H. Mekonnen</p>
+                <div class="journal">
+                    <p>Ind. Crop. Prod., 174 (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<footer>
+    <div class = "container">
+        <div class="footer-links">
+            <a href="mailto:rshorey@uwaterloo.ca" title="Email">
+                <img src="{{ url_for('static', filename='icons/email.svg') }}" alt="Email">
+             </a>
+             <a href="https://www.linkedin.com/in/drshorey/" target="_blank" title="LinkedIn">
+                <img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn">
+             </a>
+            <a href="https://scholar.google.com/citations?user=JBkRHpsAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
+                <img src="{{ url_for('static', filename='icons/scholar.svg') }}" alt="Google Scholar">
+            </a>
+            <a href="https://github.com/rxshorey" target="_blank" title="GitHub">
+                <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>

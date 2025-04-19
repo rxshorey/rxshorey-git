@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<header>
+    <div class="container">
+        <div class = "content-header">
+            <h2 class="site-title">
+                <a href="/">Rohan Shorey</a>
+            </h2>
+            <nav class="nav-links">
+                <a href="/blog" class="{% if current_page == 'blog' %}active{% endif %}">Blog</a>
+                <a href="/publications" class="{% if current_page == 'publications' %}active{% endif %}">Publications</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<footer>
+    <div class = "container">
+        <div class="footer-links">
+            <a href="mailto:rshorey@uwaterloo.ca" title="Email">
+                <img src="{{ url_for('static', filename='icons/email.svg') }}" alt="Email">
+             </a>
+             <a href="https://www.linkedin.com/in/drshorey/" target="_blank" title="LinkedIn">
+                <img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn">
+             </a>
+            <a href="https://scholar.google.com/citations?user=JBkRHpsAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
+                <img src="{{ url_for('static', filename='icons/scholar.svg') }}" alt="Google Scholar">
+            </a>
+            <a href="https://github.com/rxshorey" target="_blank" title="GitHub">
+                <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -26,7 +26,7 @@
             <p> <strong>Carbon Compass: Navigate Your Footprint</strong></p>
         </div>
         <div class = "blog-content">
-            <p> <strong> The Challenge and AI Solution</strong>
+            <p> <strong>I. The Challenge and AI Solution</strong>
             <p>Despite growing awareness of climate change, most individuals lack a clear understanding of how their everyday habits—driving, flying, home energy use, and diet—translate into a personal carbon footprint.
                Existing online calculators often provide only static estimates with generic advice, offering little motivation or actionable guidance tailored to each user’s lifestyle.
                This project addresses that gap by creating a conversational, Gemini‑powered chatbot that: 
@@ -40,12 +40,31 @@
             <p>3. Embeddings (Vector Store/Vector Database)</p>
             <p>All of this is encased in a lightweight yet powerful end‑to‑end proof of concept chat-bot for climate‑smart GenAI applications that could be used by every individual.</p>
             <p></p>
-            <p><strong>Code in Action</strong></p>
-            <p>The provided code showcases how gen AI was impleneted to solve the problem:</p>
-        </div>
-        <div class = "blog-img">
-            <img src ="static/blog/code.jpg" alt="code">
-    
+            <p><strong>II. Code in Action</strong></p>
+            <p> A full code can be found it  <a href = "https://www.kaggle.com/code/rohanshorey/carbon-compass">here</a></p>
+            <p>The provided snippet showcases how gen AI was impleneted to solve the problem:</p>       
+                <div class = "blog-img1">
+                    <img src ="static/blog/code.jpg" alt="code">
+                </div>
+            <p>1. Data Input: The carbon_chatbot() function gathers user data on their weekly car mileage, flights, energy consumption, and diet. </p>
+            <p>Footprint Calculation: The calculate_footprint() method uses predefined emission factors to estimate the user's annual carbon footprint.</p>
+            <p>Relevant Tip Retrieval: The _build_reduction_tips_vector_store() and _retrieve_relevant_tips() methods use a Sentence Transformer model to create semantic embeddings of various carbon reduction tips. 
+                Based on a summary of the user's data, the most relevant tips are retrieved using cosine similarity. 
+                This ensures that the GenAI model has relevant context for generating new ideas.</p>
+            <p>Personalized Tip Generation: The _create_prompt_template() defines a structured prompt that guides the GenAI model (in this case, Gemini) to generate five unique and creative reduction tips, aiming for diversity across domains like transport, home energy, diet, waste, and consumption. 
+                It also provides the model with the user's estimated footprint and a few relevant "seed" tips for inspiration, but explicitly instructs it not to repeat them verbatim.</p>
+            <p>Output: The chatbot then presents the estimated carbon footprint and the personalized tips to the user.</p>
+            <p></p>
+            <p>Here is some examples of how chat-bot works</p>
+                <div class = "blog-img2">
+                    <img src ="static/blog/shot1.jpg" alt="Result 1">
+                    <img src ="static/blog/shot2.jpg" alt="Result 2">
+                </div>
+            <p></p>
+            <p><strong>III. Future Art of The Possible</strong></p>
+            <p><strong>Integration with Real-World Data:</strong> Future systems could integrate with smart home devices, travel apps, and financial data to automatically gather more accurate and granular information, leading to more precise footprint calculations and highly tailored recommendations.</p>
+            <p><strong>Quantifying Impact:</strong> Future AI agents could potentially estimate the potential carbon reduction associated with each suggested tip, allowing users to prioritize actions with the biggest impact.</p>
+            
 </body>
             
 <footer>

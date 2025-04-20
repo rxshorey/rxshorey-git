@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ post.title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href=static/style.css">
 </head>
 
 
@@ -11,11 +11,11 @@
     <div class="container">
         <div class = "content-header">
             <h2 class="site-title">
-                <a href="/">Rohan Shorey</a>
+                <a href="index.html">Rohan Shorey</a>
             </h2>
             <nav class="nav-links">
-                <a href="/blog" class="{% if current_page == 'blog' %}active{% endif %}">Blog</a>
-                <a href="/publications" class="{% if current_page == 'publications' %}active{% endif %}">Publications</a>
+                <a href="blog.html>Blog</a>
+                <a href="publications.html">Publications</a>
             </nav>
         </div>
     </div>
@@ -26,7 +26,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 1.jpg') }}" alt="Publication 1" class="pub-image">
+                <img src="static/pub/pub 1.jpg" alt="Publication 1" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -44,7 +44,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 2.jpg') }}" alt="Publication 2" class="pub-image">
+                <img src="static/pub/pub 2.jpg" alt="Publication 2" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -62,7 +62,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 3.gif') }}" alt="Publication 3" class="pub-image">
+                <img src="static/pub/pub 3.gif" alt="Publication 3" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -80,7 +80,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 4.jpg') }}" alt="Publication 4" class="pub-image">
+                <img src="static/pub/pub 4.jpg" alt="Publication 4" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -99,7 +99,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 5.jpg') }}" alt="Publication 5" class="pub-image">
+                <img src="static/pub/pub 5.jpg" alt="Publication 5" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -117,7 +117,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 6.jpg') }}" alt="Publication 6" class="pub-image">
+                <img src="static/pub/pub 6.jpg" alt="Publication 6" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -135,7 +135,7 @@
         <div class="two-columns">
             <div class="column left-column">
                 <p></p>
-                <img src="{{ url_for('static', filename='pub/pub 7.jpg') }}" alt="Publication 7" class="pub-image">
+                <img src="static/pub/pub 7.jpg" alt="Publication 7" class="pub-image">
             </div>
             <div class="column right-column">
                 <nav class = "pub-links">
@@ -156,16 +156,16 @@
     <div class = "container">
         <div class="footer-links">
             <a href="mailto:rshorey@uwaterloo.ca" title="Email">
-                <img src="{{ url_for('static', filename='icons/email.svg') }}" alt="Email">
+                <img src="static/icons/email.svg" alt="Email">
              </a>
              <a href="https://www.linkedin.com/in/drshorey/" target="_blank" title="LinkedIn">
-                <img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn">
+                <img src="static/icons/linkedin.svg" alt="LinkedIn">
              </a>
             <a href="https://scholar.google.com/citations?user=JBkRHpsAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
-                <img src="{{ url_for('static', filename='icons/scholar.svg') }}" alt="Google Scholar">
+                <img src="static/icons/scholar.svg" alt="Google Scholar">
             </a>
             <a href="https://github.com/rxshorey" target="_blank" title="GitHub">
-                <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+                <img src="static/icons/github.svg" alt="GitHub">
             </a>
         </div>
     </div>

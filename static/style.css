@@ -1,0 +1,171 @@
+/* Style for header */
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title a {
+    font-size: 1.5rem;
+    color: #2e5e4e;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+
+.nav-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #2e5e4e;
+    font-weight: bold;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+    color: #1b4035;
+    border-color: #1b4035;
+    border-bottom: 2px solid #1b4035;
+}
+
+.site-title a:hover,
+.site-title a:focus,
+.site-title a:active {
+    color: #1b4035;
+    border-color: #1b4035;
+    border-bottom: 2px solid #1b4035;
+}
+
+/*Style for body*/
+body {
+    font-family: "Roboto Light", sans-serif;
+    margin: 0;
+    padding: 20px 40px;
+    background: linear-gradient(to right, lightseagreen, seagreen); /* soft green gradient */
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    align-items: flex-start;
+}
+
+
+.profile-image {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;  /* Space below image */
+    display: block;
+    margin-left: 33px;
+    margin-right: auto;
+    vertical-align: top;  /* Ensures the image aligns with the top of the column */
+}
+
+
+a {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.two-columns {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+    align-items: flex-start;
+}
+
+
+.left-column {
+    flex: 0.8;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.right-column {
+    flex: 2.2;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.pub-links a {
+    text-decoration: none;
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: black;
+    font-weight: normal;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+.pub-links a:hover,
+.pub-links a:focus,
+.pub-links a:active {
+    color: #1b4035;
+    border-color: #1b4035;
+    border-bottom: 2px solid #1b4035;
+}
+
+.pub-image {
+    width: auto;
+    height: 180px;
+    margin-bottom: 10px;  /* Space below image */
+    display: block;
+    align-items: center;
+    vertical-align: top;  /* Ensures the image aligns with the top of the column */
+}
+
+.journal p {
+    text-decoration: none;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Style for footer */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* space between icons */
+}
+
+.footer-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.footer-links img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.footer-links a:hover img {
+    transform: scale(1.15);
+    opacity: 1;
+}

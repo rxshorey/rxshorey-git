@@ -46,15 +46,15 @@
                 <div class = "blog-img1">
                     <img src ="static/blog/code.jpg" alt="code">
                 </div>
-            <p>1. Data Input: The carbon_chatbot() function gathers user data on their weekly car mileage, flights, energy consumption, and diet. </p>
-            <p>Footprint Calculation: The calculate_footprint() method uses predefined emission factors to estimate the user's annual carbon footprint.</p>
-            <p>Relevant Tip Retrieval: The _build_reduction_tips_vector_store() and _retrieve_relevant_tips() methods use a Sentence Transformer model to create semantic embeddings of various carbon reduction tips. 
+            <p><strong>Data Input:</strong> The carbon_chatbot() function gathers user data on their weekly car mileage, flights, energy consumption, and diet. </p>
+            <p><strong>Footprint Calculation:</strong> The calculate_footprint() method uses predefined emission factors to estimate the user's annual carbon footprint.</p>
+            <p><strong>Relevant Tip Retrieval:</strong> The _build_reduction_tips_vector_store() and _retrieve_relevant_tips() methods use a Sentence Transformer model to create semantic embeddings of various carbon reduction tips. 
                 Based on a summary of the user's data, the most relevant tips are retrieved using cosine similarity. 
                 This ensures that the GenAI model has relevant context for generating new ideas.</p>
-            <p>Personalized Tip Generation: The _create_prompt_template() defines a structured prompt that guides the GenAI model (in this case, Gemini) to generate five unique and creative reduction tips, aiming for diversity across domains like transport, home energy, diet, waste, and consumption. 
+            <p><strong>Personalized Tip Generation:</strong> The _create_prompt_template() defines a structured prompt that guides the GenAI model (in this case, Gemini) to generate five unique and creative reduction tips, aiming for diversity across domains like transport, home energy, diet, waste, and consumption. 
                 It also provides the model with the user's estimated footprint and a few relevant "seed" tips for inspiration, but explicitly instructs it not to repeat them verbatim.</p>
-            <p>Output: The chatbot then presents the estimated carbon footprint and the personalized tips to the user.</p>
-            <p></p>
+            <p><strong>Output:</strong> The chatbot then presents the estimated carbon footprint and the personalized tips to the user.</p>
+            <p> </p>
             <p>Here is some examples of how chat-bot works</p>
                 <div class = "blog-img2">
                     <img src ="static/blog/shot1.png" alt="Result 1">

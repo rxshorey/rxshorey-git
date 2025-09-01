@@ -1,1 +1,1 @@
-https://rxshorey.github.io
+rxshorey.github.io
